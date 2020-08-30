@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HKScoreSheetWidget</class>
+ <widget class="QWidget" name="HKScoreSheetWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>807</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QComboBox" name="playerFlowerBox">
+       <item>
+        <property name="text">
+         <string>Fleur du joueur...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Prunier (1)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Orchidée (2)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chrysanthème (3)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bambou (4)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="playerSeasonBox">
+       <item>
+        <property name="text">
+         <string>Saison du joueur...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Printemps (1)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Été (2)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Automne (3)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hiver (4)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="playerWindBox">
+       <item>
+        <property name="text">
+         <string>Vent du joueur...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Est</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sud</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nord</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ouest</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="mainWindBox">
+       <item>
+        <property name="text">
+         <string>Vent Dominant...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Est</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sud</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nord</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ouest</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QCheckBox" name="mahJongCheckBox">
+       <property name="text">
+        <string>Mah-Jong</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QCheckBox" name="wallCheckBox">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Provenant du mur</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="moonCheckBox">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Pêcher la lune
+au fond de la mer</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="stealCheckBox">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Voler un Kong exposé</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="troubleCheckBox">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Couleur trouble</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="pureCheckBox">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Couleur pure</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QComboBox" name="combination2Box">
+       <item>
+        <property name="text">
+         <string>Deuxième combinaison...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung majeur / de Vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Vent du joueur / domniant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Dragons</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong majeur / de vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Vent du joueur / dominant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Dragons</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QComboBox" name="combination3Box">
+       <item>
+        <property name="text">
+         <string>Troisième combinaison...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung majeur / de Vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Vent du joueur / domniant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Dragons</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong majeur / de vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Vent du joueur / dominant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Dragons</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QComboBox" name="pairBox">
+       <item>
+        <property name="text">
+         <string>Paire...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Paire de Vent du joueur / dominant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Paire de Dragons</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QCheckBox" name="hiddenPairCheckBox">
+       <property name="text">
+        <string>Cachée</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="hidden4CheckBox">
+       <property name="text">
+        <string>Cachée</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QComboBox" name="combination1Box">
+       <item>
+        <property name="text">
+         <string>Première combinaison...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung majeur / de Vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Vent du joueur / dominant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Dragons</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong majeur / de vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Vent du joueur / dominant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Dragons</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QComboBox" name="combination4Box">
+       <item>
+        <property name="text">
+         <string>Quatrième combinaison...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung majeur / de Vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Vent du joueur / domniant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pung de Dragons</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong mineur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong majeur / de vent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Vent du joueur / dominant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kong de Dragons</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="hidden1CheckBox">
+       <property name="text">
+        <string>Cachée</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="hidden2CheckBox">
+       <property name="text">
+        <string>Cachée</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="hidden3CheckBox">
+       <property name="text">
+        <string>Cachée</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QCheckBox" name="flower1CheckBox">
+         <property name="text">
+          <string>Prunier (1)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="season1CheckBox">
+         <property name="text">
+          <string>Printemps (1)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="flower2CheckBox">
+         <property name="text">
+          <string>Orchidée (2)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="season2CheckBox">
+         <property name="text">
+          <string>Été (2)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="flower3CheckBox">
+         <property name="text">
+          <string>Chrysanthème (3)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="season3CheckBox">
+         <property name="text">
+          <string>Automne (3)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QCheckBox" name="flower4CheckBox">
+         <property name="text">
+          <string>Bambou (4)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="season4CheckBox">
+         <property name="text">
+          <string>Hiver (4)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="pointsTableWidget">
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Points</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="multiplicatorsTableWidget">
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Multiplicateurs</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="resetButton">
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Score :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="scoreLabel">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
